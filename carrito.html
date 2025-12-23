@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carrito - Catsoul</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="marca-completa">
+            <img src="logo.jpeg" alt="Logo Catsoul" class="logo-marca">
+            <h1>CATSOUL</h1>
+        </div>
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="carrito.html">Carrito 🛒 (<span id="contador">0</span>)</a>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <h1>🛍️ Tu Carrito Catsoul</h1>
+        <p class="subtitulo-destacado">Prendas seleccionadas con amor, listas para llegar a tu hogar</p>
+        
+        <div id="carrito-items">
+            <p id="carrito-vacio">🎁 Tu carrito está esperando por prendas especiales...</p>
+        </div>
+        
+        <div class="total">
+            <h2>💰 Total de tu compra: $<span id="total-precio">0</span></h2>
+        </div>
+        
+        <div class="acciones">
+            <button onclick="seguirComprando()">✨ Seguir comprando</button>
+            <button onclick="vaciarCarrito()">🗑️ Vaciar carrito</button>
+            <button onclick="comprar()" class="boton-comprar">🎉 ¡Comprar ahora!</button>
+        </div>
+        
+        <p><a href="productos.html">← Volver a todos los productos</a></p>
+    </div>
+
+    <div class="footer">
+        <p>Catsoul - Donde cada compra es un abrazo bordado ❤️</p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
